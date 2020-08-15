@@ -25,13 +25,19 @@ h1 {letter-spacing: 6px}
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html" class="w3-bar-item w3-button">Home</a>
   <a href="CV.html" class="w3-bar-item w3-button">CV</a>
-  <a href="Gedichten.html" class="w3-bar-item w3-button">Gedichten</a>
-  <a href="Brievenmaandag.html" class="w3-bar-item w3-button">Brievenmaandag</a>
   <a href="Wolken.html" class="w3-bar-item w3-button">Wolken</a>
-  <a href="Links.html" class="w3-bar-item w3-button">Links</a>
+  <a href="Brievenmaandag.html" class="w3-bar-item w3-button">Brieven</a>
+  <a href="Gedichten.html" class="w3-bar-item w3-button">Gedichten</a>
   <a href="Thesis.html" class="w3-bar-item w3-button">Thesis</a>
-  <a href="Oude_projecten.html" class="w3-bar-item w3-button">Oude Projecten</a>
-  <a href="About.html" class="w3-bar-item w3-button">Ik</a>
+    <button class="dropdown-btn">Links
+    <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="Links.html" class="w3-bar-item w3-button">Andere sites</a>
+      <a href="Oude_Projecten.html" class="w3-bar-item w3-button">Oude projecten</a>
+      <a href="Webdesign.html" class="w3-bar-item w3-button">Webdesign links</a>
+    </div>
+  <a href="About.html" class="w3-bar-item w3-button">Mijzelf</a>
 </div>
 
 <script>
@@ -44,7 +50,23 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 } 
-</script>  
+
+//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+} 
+</script>
   
 <!-- Pagina content -->
 <div class="w3-content" style="max-width:1500px">
@@ -57,18 +79,26 @@ function closeNav() {
   </a>
   <h3 class="w3-tag w3-wide">Under Construction</h3>
 
-  <div class="w3-padding-32">
+ <div class="w3-padding-32">
     <div class="w3-bar w3-border">
       <a><span class="w3-bar-item w3-button" onclick="openNav()">&#9776; Menu</span></a>
       <a href="index.html" class="w3-bar-item w3-button">Home</a>
       <a href="CV.html" class="w3-bar-item w3-button">CV</a>
-      <a href="Gedichten.html" class="w3-bar-item w3-button">Gedichten</a>
-      <a href="Brievenmaandag.html" class="w3-bar-item w3-button">Brievenmaandag</a>
       <a href="Wolken.html" class="w3-bar-item w3-button">Wolken</a>
-      <a href="Links.html" class="w3-bar-item w3-button">Links</a>
+      <a href="Brievenmaandag.html" class="w3-bar-item w3-button">Brieven</a>
+      <a href="Gedichten.html" class="w3-bar-item w3-button">Gedichten</a>
       <a href="Thesis.html" class="w3-bar-item w3-button">Thesis</a>
-      <a href="Oude_projecten.html" class="w3-bar-item w3-button">Oude Projecten</a>
-      <a href="About.html" class="w3-bar-item w3-button">Ik</a>
+      <div class="w3-dropdown-hover">
+      <button class="w3-button">Links
+      <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-bar-block w3-border">
+        <a href="Links.html" class="w3-bar-item w3-button">Andere sites</a>
+        <a href="Oude_Projecten.html" class="w3-bar-item w3-button">Oude projecten</a>
+        <a href="Webdesign.html" class="w3-bar-item w3-button">Webdesign links</a>
+      </div>
+    </div>
+      <a href="About.html" class="w3-bar-item w3-button">Mijzelf</a>
 
       <!-- Andere opties -->
       <!--<a href="#" class="w3-bar-item w3-button w3-light-grey">CV</a> -->
@@ -82,8 +112,8 @@ function closeNav() {
 
 <!-- Intro pagina -->
 <div class="w3-content w3-center" id="portfolio" style="margin-bottom:50px;">
-  <h4 class="w3-text-black">Brievenmaandag is de wekelijkse brievenrubriek van <a href="https://www.gamekings.tv/" target="_blank">Gamekings.tv</a> en wordt live uitgezonden op <a href="https://www.twitch.tv/gamekings" target="_blank">Twitch</a>.</h4>
-  <h4 class="w3-text-black">De items zijn terug te zien op <a href="https://www.gamekings.tv/" target="_blank">Gamekings.tv</a> en op <a href="https://www.youtube.com/user/Gamekingsextra" target="_blank">Youtube</a>. Hieronder een overzicht van de afleveringen van brievenmaandag en andere livestreams waarin ik of mijn brieven aan bod kwamen.</h4>
+  <h4 class="w3-text-black">Brievenmaandag is de wekelijkse brievenrubriek van <a href="https://www.gamekings.tv/" style="color:#FF9900; text-decoration:none;" target="_blank">Gamekings.tv</a> en wordt live uitgezonden op <a href="https://www.twitch.tv/gamekings" style="color:#FF9900; text-decoration:none;" target="_blank">Twitch</a>. 
+  De items zijn terug te zien op <a href="https://www.gamekings.tv/" style="color:#FF9900; text-decoration:none;" target="_blank">Gamekings.tv</a> en op <a href="https://www.youtube.com/user/Gamekingsextra" style="color:#FF9900; text-decoration:none;" target="_blank">Youtube</a>. Hieronder een overzicht van de afleveringen van brievenmaandag en andere livestreams waarin ik of mijn brieven aan bod kwamen.</h4>
 </div>
 
 <!-- Grid -->
