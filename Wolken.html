@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 <!-- Titel tab-->
-<title>Jorik's Cloudfield - Wolken</title>
+<title>Jorik's Cloudfield - Wolken-1</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="paginationstyle.css">
 <style>
 body,h1 {font-family: "Raleway", Arial, sans-serif}
 h1 {letter-spacing: 6px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
-  
-<head>
-  <link rel="shortcut icon" type="image/x-icon" href="crow.ico">
-</head>   
-  
 <body>
-  
+
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="crow.ico">
+  </head>
+
 <!-- Sidenav content-->
 <link rel="stylesheet" type="text/css" href="menustyle.css">
 <div id="mySidenav" class="sidenav">
@@ -28,13 +28,13 @@ h1 {letter-spacing: 6px}
   <a href="Wolken.html" class="w3-bar-item w3-button">Wolken</a>
   <a href="Brievenmaandag.html" class="w3-bar-item w3-button">Brieven</a>
   <a href="Gedichten.html" class="w3-bar-item w3-button">Gedichten</a>
-  <a href="Thesis.html" class="w3-bar-item w3-button">Scripties</a>
+  <a href="Thesis.html" class="w3-bar-item w3-button">Thesis</a>
     <button class="dropdown-btn">Links
     <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
       <a href="Links.html" class="w3-bar-item w3-button">Andere sites</a>
-      <a href="Oude_projecten.html" class="w3-bar-item w3-button">Oude projecten</a>
+      <a href="Oude_Projecten.html" class="w3-bar-item w3-button">Oude projecten</a>
       <a href="Webdesign.html" class="w3-bar-item w3-button">Webdesign links</a>
     </div>
   <a href="About.html" class="w3-bar-item w3-button">Mijzelf</a>
@@ -68,16 +68,16 @@ for (i = 0; i < dropdown.length; i++) {
 } 
 </script>
 
-
 <!-- Pagina content -->
 <div class="w3-content" style="max-width:1500px">
 
 <!-- Header -->
 <header class="w3-panel w3-center w3-opacity" style="padding:40px 0px">
+  <!-- <div style="background-image: url('https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Header.jpg');"> --> 
 
-  <a href="https://jorikdeboer.github.io/Cloudfield"  style="text-decoration: none">
-    <h2>Jorik's Cloud Field</h2>
-  </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield"  style="text-decoration: none">
+      <h2>Jorik's Cloud Field</h2>
+    </a>
   <h3 class="w3-tag w3-wide">Under Construction</h3>
 
   <div class="w3-padding-32">
@@ -88,14 +88,14 @@ for (i = 0; i < dropdown.length; i++) {
       <a href="Wolken.html" class="w3-bar-item w3-button">Wolken</a>
       <a href="Brievenmaandag.html" class="w3-bar-item w3-button">Brieven</a>
       <a href="Gedichten.html" class="w3-bar-item w3-button">Gedichten</a>
-      <a href="Thesis.html" class="w3-bar-item w3-button">Scripties</a>
+      <a href="Thesis.html" class="w3-bar-item w3-button">Thesis</a>
       <div class="w3-dropdown-hover">
       <button class="w3-button">Links
       <i class="fa fa-caret-down"></i>
       </button>
       <div class="w3-dropdown-content w3-bar-block w3-border">
         <a href="Links.html" class="w3-bar-item w3-button">Andere sites</a>
-        <a href="Oude_projecten.html" class="w3-bar-item w3-button">Oude projecten</a>
+        <a href="Oude_Projecten.html" class="w3-bar-item w3-button">Oude projecten</a>
         <a href="Webdesign.html" class="w3-bar-item w3-button">Webdesign links</a>
       </div>
     </div>
@@ -109,6 +109,7 @@ for (i = 0; i < dropdown.length; i++) {
     <!-- Pagina titel -->
     <h1 class="w3-xlarge">Wolkenfoto's gemaakt vanuit mijn woonkamer</h1>
   </div>
+</div>
 </header>
 
 <script type="text/javascript">
@@ -123,12 +124,12 @@ for (i = 0; i < dropdown.length; i++) {
      }
    }
    image = new ImageArray(3)
-   image[0] = 'Wolk1.JPG'
-   image[1] = 'Wolk2.JPG'
-   image[2] = 'Wolk3.JPG'
-   image[3] = 'Wolk4.JPG'
-   image[4] = 'Wolk5.JPG'
-   image[5] = 'Wolk6.JPG'
+   image[0] = 'Wolk1.jpg'
+   image[1] = 'Wolk2.jpg'
+   image[2] = 'Wolk3.jpg'
+   image[3] = 'Wolk4.jpg'
+   image[4] = 'Wolk5.jpg'
+   image[5] = 'Wolk6.jpg'
 
    var rand = 60/image.length
    function randomimage() {
@@ -141,10 +142,20 @@ for (i = 0; i < dropdown.length; i++) {
   
   </script>
 
+<div class="center">
+  <div class="pagination">
+    <a href="Wolken.html">&laquo;</a>
+    <a href="Wolken.html"class="active">1</a>
+    <a href="Wolken-2.html">2</a> 
+    <a href="Wolken-2.html">&raquo;</a>
+  </div>
+</div>
+
 <!-- Photo Grid -->
 <div class="w3-row-padding" style="margin-bottom:128px; margin-top: 50px;">
 <!-- div class="w3-row-padding w3-grayscale" style="margin-bottom:128px"-->
   <div class="w3-half">
+    <!-- img src="C:\Users\jorik\OneDrive\Bureaublad\Operatie Wonderland\Afbeeldingen\Wolken\Wolk1" style="width:100%" -->
     <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk1.JPG">
       <img src="Images/Clouds/Wolk1.JPG" alt="Wolk1" style="width:100%" title="Wolk1"/>
     </a>
@@ -177,39 +188,6 @@ for (i = 0; i < dropdown.length; i++) {
     </a>
     <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk22.JPG">
       <img src="Images/Clouds/Wolk22.JPG" alt="Wolk22" style="width:100%" title="Wolk22"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk23.JPG">
-      <img src="Images/Clouds/Wolk23.JPG" alt="Wolk23" style="width:100%" title="Wolk23"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk24.JPG">
-      <img src="Images/Clouds/Wolk24.JPG" alt="Wolk24" style="width:100%" title="Wolk24"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk25.JPG">
-      <img src="Images/Clouds/Wolk25.JPG" alt="Wolk25" style="width:100%" title="Wolk25"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk26.JPG">
-      <img src="Images/Clouds/Wolk26.JPG" alt="Wolk26" style="width:100%" title="Wolk26"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk27.JPG">
-      <img src="Images/Clouds/Wolk27.JPG" alt="Wolk27" style="width:100%" title="Wolk27"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk39.JPG">
-      <img src="Images/Clouds/Wolk39.JPG" alt="Wolk39" style="width:100%" title="Wolk39"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk40.JPG">
-      <img src="Images/Clouds/Wolk40.JPG" alt="Wolk40" style="width:100%" title="Wolk40"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk41.JPG">
-      <img src="Images/Clouds/Wolk41.JPG" alt="Wolk41" style="width:100%" title="Wolk41"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk42.JPG">
-      <img src="Images/Clouds/Wolk42.JPG" alt="Wolk42" style="width:100%" title="Wolk42"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk43.JPG">
-      <img src="Images/Clouds/Wolk43.JPG" alt="Wolk43" style="width:100%" title="Wolk43"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk44.JPG">
-      <img src="Images/Clouds/Wolk44.JPG" alt="Wolk44" style="width:100%" title="Wolk44"/>
     </a>
   </div>
 
@@ -247,39 +225,14 @@ for (i = 0; i < dropdown.length; i++) {
     <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk30.JPG">
       <img src="Images/Clouds/Wolk30.JPG" alt="Wolk30" style="width:100%" title="Wolk30"/>
     </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk31.JPG">
-      <img src="Images/Clouds/Wolk31.JPG" alt="Wolk31" style="width:100%" title="Wolk31"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk32.JPG">
-      <img src="Images/Clouds/Wolk32.JPG" alt="Wolk32" style="width:100%" title="Wolk32"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk33.JPG">
-      <img src="Images/Clouds/Wolk33.JPG" alt="Wolk33" style="width:100%" title="Wolk33"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk34.JPG">
-      <img src="Images/Clouds/Wolk34.JPG" alt="Wolk34" style="width:100%" title="Wolk34"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk35.JPG">
-      <img src="Images/Clouds/Wolk35.JPG" alt="Wolk35" style="width:100%" title="Wolk35"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk36.JPG">
-      <img src="Images/Clouds/Wolk36.JPG" alt="Wolk36" style="width:100%" title="Wolk36"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk37.JPG">
-      <img src="Images/Clouds/Wolk37.JPG" alt="Wolk37" style="width:100%" title="Wolk37"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk38.JPG">
-      <img src="Images/Clouds/Wolk38.JPG" alt="Wolk38" style="width:100%" title="Wolk38"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk45.JPG">
-      <img src="Images/Clouds/Wolk45.JPG" alt="Wolk45" style="width:100%" title="Wolk45"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk46.JPG">
-      <img src="Images/Clouds/Wolk46.JPG" alt="Wolk46" style="width:100%" title="Wolk46"/>
-    </a>
-    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk47.JPG">
-      <img src="Images/Clouds/Wolk47.JPG" alt="Wolk47" style="width:100%" title="Wolk47"/>
-    </a>
+  </div>
+  <div class="center">
+    <div class="pagination">
+      <a href="Wolken.html">&laquo;</a>
+      <a href="Wolken.html"class="active">1</a>
+      <a href="Wolken-2.html">2</a> 
+      <a href="Wolken-2.html">&raquo;</a>
+    </div>
   </div>
 </div>
   
