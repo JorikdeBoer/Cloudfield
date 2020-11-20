@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<!-- Titel tab-->
+<title>Jorik's Cloudfield - Wolken-2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="paginationstyle.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+
+</style>
+<body>
+
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="crow.ico">
+  </head>
+
+<!-- Sidenav content-->
+<link rel="stylesheet" type="text/css" href="menustyle.css">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="CV.html" class="w3-bar-item w3-button">CV</a>
+  <a href="Wolken.html" class="w3-bar-item w3-button">Wolken</a>
+  <a href="Brievenmaandag.html" class="w3-bar-item w3-button">Brieven</a>
+  <a href="Gedichten.html" class="w3-bar-item w3-button">Gedichten</a>
+  <a href="Science.html" class="w3-bar-item w3-button">Science</a>
+    <button class="dropdown-btn">Links
+    <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="Links.html" class="w3-bar-item w3-button">Andere sites</a>
+      <a href="Oude_projecten.html" class="w3-bar-item w3-button">Oude projecten</a>
+      <a href="Webdesign.html" class="w3-bar-item w3-button">Webdesign links</a>
+    </div>
+  <a href="Prikbord.html" class="w3-bar-item w3-button">Prikbord</a>
+  <a href="About.html" class="w3-bar-item w3-button">Mijzelf</a>
+</div>
+
+<script>
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+
+//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+} 
+</script>
+
+<!-- Pagina content -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding:40px 0px">
+  <!-- <div style="background-image: url('https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Header.jpg');"> --> 
+
+    <a href="https://jorikdeboer.github.io/Cloudfield"  style="text-decoration: none">
+      <h2>Jorik's Cloud Field</h2>
+    </a>
+  <h3 class="w3-tag w3-wide">Under Construction</h3>
+
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a><span class="w3-bar-item w3-button" onclick="openNav()">&#9776; Menu</span></a>
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="CV.html" class="w3-bar-item w3-button">CV</a>
+      <a href="Wolken.html" class="w3-bar-item w3-button">Wolken</a>
+      <a href="Brievenmaandag.html" class="w3-bar-item w3-button">Brieven</a>
+      <a href="Gedichten.html" class="w3-bar-item w3-button">Gedichten</a>
+      <a href="Science.html" class="w3-bar-item w3-button">Science</a>
+      <div class="w3-dropdown-hover">
+      <button class="w3-button">Links
+      <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-bar-block w3-border">
+        <a href="Links.html" class="w3-bar-item w3-button">Andere sites</a>
+        <a href="Oude_projecten.html" class="w3-bar-item w3-button">Oude projecten</a>
+        <a href="Webdesign.html" class="w3-bar-item w3-button">Webdesign links</a>
+      </div>
+    </div>
+      <a href="Prikbord.html" class="w3-bar-item w3-button">Prikbord</a>
+      <a href="About.html" class="w3-bar-item w3-button">Mijzelf</a>
+
+      <!-- Andere opties -->
+      <!--<a href="#" class="w3-bar-item w3-button w3-light-grey">CV</a> -->
+      <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small"></a> -->
+      <!-- <h1 class="w3-xlarge">Jorik's  Cloud Field</h1> -->
+    </div>
+    <!-- Pagina titel -->
+    <h1 class="w3-xlarge">Wolkenfoto's gemaakt vanuit mijn woonkamer</h1>
+  </div>
+</div>
+</header>
+
+<script type="text/javascript">
+  
+   var imlocation = "Images/Clouds/";
+   var currentdate = 0;
+   var image_number = 0;
+   function ImageArray (n) {
+     this.length = n;
+     for (var i =1; i <= n; i++) {
+       this[i] = ' '
+     }
+   }
+   image = new ImageArray(3)
+   image[0] = 'Wolk65.jpg'
+   image[1] = 'Wolk67.jpg'
+   image[2] = 'Wolk72.jpg'
+   image[3] = 'Wolk77.jpg'
+   image[4] = 'Wolk78.jpg'
+   image[5] = 'Wolk64.jpg'
+
+   var rand = 60/image.length
+   function randomimage() {
+     currentdate = new Date()
+     image_number = currentdate.getSeconds()
+     image_number = Math.floor(image_number/rand)
+     return(image[image_number])
+   }
+   document.write("<img src='" + imlocation + randomimage()+ "'style= width:100%; margin:100px;>");
+  
+  </script>
+
+<div class="center">
+  <div class="pagination">
+    <a href="Wolken.html">&laquo;</a>
+    <a href="Wolken.html">1</a>
+    <a href="Wolken-2.html">2</a>
+    <a href="Wolken-3.html" class="active">3</a>
+    <a href="Wolken-3.html">&raquo;</a>
+  </div>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row-padding" style="margin-bottom:128px; margin-top: 50px;">
+<!-- div class="w3-row-padding w3-grayscale" style="margin-bottom:128px"-->
+  <div class="w3-half">
+    <!-- img src="C:\Users\jorik\OneDrive\Bureaublad\Operatie Wonderland\Afbeeldingen\Wolken\Wolk1" style="width:100%" -->
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk65.JPG">
+      <img src="Images/Clouds/Wolk65.JPG" alt="Wolk65" style="width:100%" title="Wolk65"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk67.JPG">
+      <img src="Images/Clouds/Wolk67.JPG" alt="Wolk67" style="width:100%" title="Wolk67"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk72.JPG">
+      <img src="Images/Clouds/Wolk72.JPG" alt="Wolk72" style="width:100%" title="Wolk72"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk77.JPG">
+      <img src="Images/Clouds/Wolk77.JPG" alt="Wolk77" style="width:100%" title="Wolk77"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk78.JPG">
+      <img src="Images/Clouds/Wolk78.JPG" alt="Wolk78" style="width:100%" title="Wolk78"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk64.JPG">
+      <img src="Images/Clouds/Wolk64.JPG" alt="Wolk64" style="width:100%" title="Wolk64"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk62.JPG">
+      <img src="Images/Clouds/Wolk62.JPG" alt="Wolk62" style="width:100%" title="Wolk62"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk70.JPG">
+      <img src="Images/Clouds/Wolk70.JPG" alt="Wolk70" style="width:100%" title="Wolk70"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk75.JPG">
+      <img src="Images/Clouds/Wolk75.JPG" alt="Wolk75" style="width:100%" title="Wolk75"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk80.JPG">
+      <img src="Images/Clouds/Wolk80.JPG" alt="Wolk80" style="width:100%" title="Wolk80"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk82.JPG">
+      <img src="Images/Clouds/Wolk82.JPG" alt="Wolk82" style="width:100%" title="Wolk82"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk83.JPG">
+      <img src="Images/Clouds/Wolk83.JPG" alt="Wolk83" style="width:100%" title="Wolk83"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk84.JPG">
+      <img src="Images/Clouds/Wolk84.JPG" alt="Wolk84" style="width:100%" title="Wolk84"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk85.JPG">
+      <img src="Images/Clouds/Wolk85.JPG" alt="Wolk85" style="width:100%" title="Wolk85"/>
+    </a>
+  </div>
+
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk66.JPG">
+      <img src="Images/Clouds/Wolk66.JPG" alt="Wolk66" style="width:100%" title="Wolk66"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk69.JPG">
+      <img src="Images/Clouds/Wolk69.JPG" alt="Wolk69" style="width:100%" title="Wolk69"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk74.JPG">
+      <img src="Images/Clouds/Wolk74.JPG" alt="Wolk74" style="width:100%" title="Wolk74"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk71.JPG">
+      <img src="Images/Clouds/Wolk71.JPG" alt="Wolk71" style="width:100%" title="Wolk71"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk79.JPG">
+      <img src="Images/Clouds/Wolk79.JPG" alt="Wolk79" style="width:100%" title="Wolk79"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk63.JPG">
+      <img src="Images/Clouds/Wolk63.JPG" alt="Wolk63" style="width:100%" title="Wolk63"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk68.JPG">
+      <img src="Images/Clouds/Wolk68.JPG" alt="Wolk68" style="width:100%" title="Wolk68"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk73.JPG">
+      <img src="Images/Clouds/Wolk73.JPG" alt="Wolk73" style="width:100%" title="Wolk73"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk76.JPG">
+      <img src="Images/Clouds/Wolk76.JPG" alt="Wolk76" style="width:100%" title="Wolk76"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk81.JPG">
+      <img src="Images/Clouds/Wolk81.JPG" alt="Wolk81" style="width:100%" title="Wolk81"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk86.JPG">
+      <img src="Images/Clouds/Wolk86.JPG" alt="Wolk86" style="width:100%" title="Wolk86"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk87.JPG">
+      <img src="Images/Clouds/Wolk87.JPG" alt="Wolk87" style="width:100%" title="Wolk87"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk88.JPG">
+      <img src="Images/Clouds/Wolk88.JPG" alt="Wolk88" style="width:100%" title="Wolk88"/>
+    </a>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Wolk89.JPG">
+      <img src="Images/Clouds/Wolk89.JPG" alt="Wolk89" style="width:100%" title="Wolk89"/>
+    </a>
+  </div>
+  
+  <div class="center">
+    <div class="pagination">
+      <a href="Wolken.html">&laquo;</a>
+      <a href="Wolken.html">1</a>
+      <a href="Wolken-2.html">2</a>
+      <a href="Wolken-3.html" class="active">3</a>
+      <a href="Wolken-3.html">&raquo;</a>
+    </div>
+  </div>
+</div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+  <a href="https://www.facebook.com/jorik.deboer" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://nl.linkedin.com/in/jorikdeboer" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <p>Mede mogelijk gemaakt door realiteitszin en fantasie</p>
+  <p>© 2020 Jorik de Boer</p>
+  <!-- i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+</footer>
+
+</body>
+</html>
