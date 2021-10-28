@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<!-- Titel tab-->
+<title>Jorik's Cloudfield - Spel Gallerie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body>
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="crow.ico">
+</head>
+
+<!-- Sidenav content-->
+<link rel="stylesheet" type="text/css" href="menustyle.css">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="CV.html" class="w3-bar-item w3-button">CV</a>
+  <a href="Wolken.html" class="w3-bar-item w3-button">Wolken</a>
+  <a href="Science.html" class="w3-bar-item w3-button">Science</a>
+  <button class="dropdown-btn">Spelletjes
+  <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="Brievenmaandag.html" class="w3-bar-item w3-button">Gamekings Brieven</a>
+    <a href="Spel Gallerie.html" class="w3-bar-item w3-button">Spel Gallerie</a>
+  </div>
+  <a href="Gedichten.html" class="w3-bar-item w3-button">Gedichten</a>
+  <a href="Science.html" class="w3-bar-item w3-button">Science</a>
+    <button class="dropdown-btn">Links
+    <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="Links.html" class="w3-bar-item w3-button">Andere sites</a>
+      <a href="Oude_projecten.html" class="w3-bar-item w3-button">Oude projecten</a>
+      <a href="Webdesign.html" class="w3-bar-item w3-button">Webdesign links</a>
+    </div>
+  <a href="Prikbord.html" class="w3-bar-item w3-button">Prikbord</a>
+  <a href="About.html" class="w3-bar-item w3-button">Mijzelf</a>
+</div>
+
+<script>
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+
+//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+} 
+
+</script>
+
+<!-- Pagina content -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center w3-opacity" style="padding:40px 0px" >
+  <!-- <div style="background-image: url('https://jorikdeboer.github.io/Cloudfield/Images/Clouds/Header.jpg');"> -->
+
+  <a href="https://jorikdeboer.github.io/Cloudfield"  style="text-decoration: none">
+    <h2>Jorik's Cloud Field</h2>
+  </a>
+  <h3 class="w3-tag w3-wide">Under Construction</h3>
+
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a><span class="w3-bar-item w3-button" onclick="openNav()">&#9776; Menu</span></a>
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="CV.html" class="w3-bar-item w3-button">CV</a>
+      <a href="Wolken.html" class="w3-bar-item w3-button">Wolken</a>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Spelletjes
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="Brievenmaandag.html" class="w3-bar-item w3-button">Gamekings Brieven</a>
+          <a href="Spel Gallerie.html" class="w3-bar-item w3-button">Spel Gallerie</a>
+        </div>
+      </div>
+      <a href="Gedichten.html" class="w3-bar-item w3-button">Gedichten</a>
+      <a href="Science.html" class="w3-bar-item w3-button">Science</a>
+      <div class="w3-dropdown-hover">
+      <button class="w3-button">Links
+      <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-bar-block w3-border">
+        <a href="Links.html" class="w3-bar-item w3-button">Andere sites</a>
+        <a href="Oude_projecten.html" class="w3-bar-item w3-button">Oude projecten</a>
+        <a href="Webdesign.html" class="w3-bar-item w3-button">Webdesign links</a>
+      </div>
+    </div>
+      <a href="Prikbord.html" class="w3-bar-item w3-button">Prikbord</a>
+      <a href="About.html" class="w3-bar-item w3-button">Mijzelf</a>
+
+      <!-- Andere opties -->
+      <!--<a href="#" class="w3-bar-item w3-button w3-light-grey">CV</a> -->
+      <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small"></a> -->
+      <!-- <h1 class="w3-xlarge">Jorik's  Cloud Field</h1> -->
+    </div>
+    <!-- Pagina titel -->
+    <h1 class="w3-xlarge">Spel Gallerie</h1>
+  </div>
+</div>
+</header>
+
+<!-- Intro pagina -->
+<div class="w3-content w3-center" id="portfolio" style="margin-bottom:50px;">
+  <h4 class="w3-text-black">De gallerie met een selectie van gespeelde spellen in alfabetische volgorde</h4>
+</div>
+
+<!-- Foto Grid -->
+
+
+<div class="w3-row-padding" style="margin-bottom:128px">
+  <div class="w3-content w3-center" id="portfolio" style="margin-bottom:50px; width:100%;">
+    <div class="w3-xlarge w3-light-dark" style="width:100%">
+      <p>Agricola</p>
+    </div>
+  </div>
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Agricola 1.jpg">
+      <img src="Images/Spel Gallerie/Agricola 1.jpg" alt="Agricola 1" style="width:100%" title="Agricola 1"/>
+    </a>
+
+    <div class="w3-xlarge w3-light-dark w3-center" style="width:100%">
+    <br> Agricola - Expert editie<br>
+    Jaar van uitgave: 2016<br>
+    1-4 Spelers<br><br>
+  </div>
+  </div>
+
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Agricola 2.jpg"></a>
+      <img src="Images/Spel Gallerie/Agricola 2.jpg" alt="Agricola 2" style="margin-bottom:180px; width:100%" title="Agricola 2"/>
+    </a>
+  </div>
+  
+  <div class="w3-content w3-center" id="portfolio" style="margin-bottom:50px; width:100%;">
+    <div class="w3-xlarge w3-light-dark" style="width:100%">
+      <p><br> Asterix en de Romeinen<br>
+        Jaar van uitgave: 1990<br>
+        2-6 Spelers<br></p>
+    </div>
+  </div>
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Asterix en de Romeinen 1.jpg">
+      <img src="Images/Spel Gallerie/Asterix en de Romeinen 1.jpg" alt="Asterix en de Romeinen 1" style="width:100%" title="Asterix en de Romeinen 1"/>
+    </a>
+  </div>
+
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Asterix en de Romeinen 2.jpg">
+      <img src="Images/Spel Gallerie/Asterix en de Romeinen 2.jpg" alt="Asterix en de Romeinen 2" style="margin-bottom:180px; width:100%" title="Asterix en de Romeinen 2"/>
+    </a>
+  </div>
+
+  <div class="w3-content w3-center" id="portfolio" style="margin-bottom:50px; width:100%;">
+    <div class="w3-xlarge w3-light-dark" style="width:100%">
+      <p>Kolonisten van Catan Steden en Ridders</p>
+    </div>
+  </div>
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Kolonisten van Catan Steden en Ridders 1.jpg">
+      <img src="Images/Spel Gallerie/Kolonisten van Catan Steden en Ridders 1.jpg" alt="Kolonisten van Catan Steden en Ridders 1" style="width:100%" title="Kolonisten van Catan Steden en Ridders 1"/>
+    </a>
+    <div class="w3-xlarge w3-light-dark w3-center" style="width:100%">
+        <br>Kolonisten van Catan Steden en Ridders<br>
+        Jaar van uitgave: 2001<br>
+        2-4 Spelers<br><br>
+    </div>
+  </div>
+
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Kolonisten van Catan Steden en Ridders 2.jpg">
+      <img src="Images/Spel Gallerie/Kolonisten van Catan Steden en Ridders 2.jpg" alt="Kolonisten van Catan Steden en Ridders 2" style="margin-bottom:180px; width:100%" title="Kolonisten van Catan Steden en Ridders 2"/>
+    </a>
+  </div>
+
+  <div class="w3-content w3-center" id="portfolio" style="margin-bottom:50px; width:100%;">
+    <div class="w3-xlarge w3-light-dark" style="width:100%">
+      <p><br>Kwatro<br>
+        Jaar van uitgave: 2012<br>
+        2-4 Spelers<br></p>
+    </div>
+  </div>
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Kwartro 1.jpg">
+      <img src="Images/Spel Gallerie/Kwatro 1.jpg" alt="Kwatro 1" style="width:100%" title="Kwatro 1"/>
+    </a>
+  </div>
+
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Kwatro 2.jpg">
+      <img src="Images/Spel Gallerie/Kwatro 2.jpg" alt="Kwatro 2" style="margin-bottom:180px; width:100%" title="Kwatro 2"/>
+    </a>
+  </div>
+
+  <div class="w3-content w3-center" id="portfolio" style="margin-bottom:50px; width:100%;">
+    <div class="w3-xlarge w3-light-dark" style="width:100%">
+      <p><br>Metropolis<br>
+        Jaar van uitgave: 2012<br>
+        2-5 Spelers<br></p>
+    </div>
+
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Metropolis 1.jpg">
+      <img src="Images/Spel Gallerie/Metropolis 1.jpg" alt="Metropolis 1" style="width:100%" title="Metropolis 1"/>
+    </a>
+  </div>
+
+  <div class="w3-content w3-center" id="portfolio" style="margin-bottom:50px; width:100%;">
+    <div class="w3-xlarge w3-light-dark" style="width:100%">
+      <p><br>Photosynthesis<br>
+        Jaar van uitgave: 2017<br>
+        2-4 Spelers<br></p>
+    </div>
+  </div>
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Photosynthesis 1.jpg">
+      <img src="Images/Spel Gallerie/Photosynthesis 1.jpg" alt="Photosynthesis 1" style="width:100%" title="Photosynthesis 1"/>
+    </a>
+  </div>
+
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Photosynthesis 2.jpg">
+      <img src="Images/Spel Gallerie/Photosynthesis 2.jpg" alt="Photosynthesis 2" style="margin-bottom:180px; width:100%" title="Photosynthesis 2"/>
+    </a>
+  </div>
+
+  <div class="w3-content w3-center" id="portfolio" style="margin-bottom:50px; width:100%;">
+    <div class="w3-xlarge w3-light-dark" style="width:100%">
+      <p><br>Pinguïn Party<br>
+        Jaar van uitgave: 2008<br>
+        2-6 Spelers<br></p>
+    </div>
+  </div>
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Pinguin Party 1.jpg">
+      <img src="Images/Spel Gallerie/Pinguin Party 1.jpg" alt="Pinguin Party 1" style="width:100%" title="Pinguin Party 1"/>
+    </a>
+  </div>
+
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Pinguin Party 2.jpg">
+      <img src="Images/Spel Gallerie/Pinguin Party 2.jpg" alt="Pinguin Party 2" style="margin-bottom:180px; width:100%" title="Pinguin Party 2"/>
+    </a>
+  </div>
+
+  <div class="w3-content w3-center" id="portfolio" style="margin-bottom:50px; width:100%;">
+    <div class="w3-xlarge w3-light-dark" style="width:100%">
+      <p><br>Puerto Rico<br>
+        Jaar van uitgave: 2002<br>
+        3-5 Spelers<br></p>
+    </div>
+
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Puerto Rico 1.jpg">
+      <img src="Images/Spel Gallerie/Puerto Rico 1.jpg" alt="Puerto Rico 1" style="width:100%" title="Puerto Rico 1"/>
+    </a>
+  </div>
+
+  <div class="w3-content w3-center" id="portfolio" style="margin-bottom:50px; width:100%;">
+    <div class="w3-xlarge w3-light-dark" style="width:100%">
+      <p><br>Refugio<br>
+        Jaar van uitgave: 2012<br>
+        2-4 Spelers<br></p>
+    </div>
+  </div>
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Refugio 1.jpg">
+      <img src="Images/Spel Gallerie/Refugio 1.jpg" alt="Refugio 1" style="width:100%" title="Refugio 1"/>
+    </a>
+  </div>
+
+  <div class="w3-half">
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Refugio 2.jpg">
+      <img src="Images/Spel Gallerie/Refugio 2.jpg" alt="Refugio 2" style="margin-bottom:120px; width:100%" title="Refugio 2"/>
+    </a>
+  </div>
+
+  <div class="w3-half">
+    <div class="w3-xlarge w3-light-dark w3-center" style="width:100%">
+      <p><br>Scotland Yard<br>
+        Jaar van uitgave: 1983<br>
+        3-6 Spelers<br></p>
+    </div>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Scotland Yard 1.jpg">
+      <img src="Images/Spel Gallerie/Scotland Yard 1.jpg" alt="Scotland Yard 1" style="width:100%" title="Scotland Yard 1"/>
+    </a>
+  </div>
+
+  <div class="w3-half">
+    <div class="w3-xlarge w3-light-dark w3-center" style="width:100%">
+      <p><br>Splendor<br>
+        Jaar van uitgave: 2011<br>
+        2-4 Spelers<br></p>
+    </div>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Splendor 1.jpg">
+      <img src="Images/Spel Gallerie/Splendor 1.jpg" alt="Splendor 1" style="margin-bottom:120px; width:100%" title="Splendor 1"/>
+    </a>
+  </div>
+
+  <div class="w3-content w3-center" id="portfolio" style="margin-bottom:50px; width:100%;">
+    <div class="w3-xlarge w3-light-dark" style="width:100%">
+      <p><br>Schat van Kadora<br>
+        Jaar van uitgave: 2020<br>
+        2-4 Spelers<br></p>
+    </div>
+    <a href="https://jorikdeboer.github.io/Cloudfield/Images/Spel Gallerie/Schat van kadora 1.jpg">
+      <img src="Images/Spel Gallerie/Schat van kadora 1.jpg" alt="Schat van kadora 1" style="width:100%" title="Schat van kadora 1"/>
+    </a>
+  </div>
+
+
+</div>
+
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+  <a href="https://www.facebook.com/jorik.deboer" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://nl.linkedin.com/in/jorikdeboer" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <p>Mede mogelijk gemaakt door realiteitszin en fantasie</p>
+  <p>© 2020 Jorik de Boer</p>
+  <!-- i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+</footer>
+
+</body>
+</html>
