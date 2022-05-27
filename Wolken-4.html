@@ -88,7 +88,15 @@ for (i = 0; i < dropdown.length; i++) {
       <a href="index.html" class="w3-bar-item w3-button">Home</a>
       <a href="CV.html" class="w3-bar-item w3-button">CV</a>
       <a href="Wolken.html" class="w3-bar-item w3-button">Wolken</a>
-      <a href="Brievenmaandag.html" class="w3-bar-item w3-button">Brieven</a>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Spelletjes
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="Brievenmaandag.html" class="w3-bar-item w3-button">Gamekings Brieven</a>
+          <a href="Spel Gallerie.html" class="w3-bar-item w3-button">Spel Gallerie</a>
+        </div>
+      </div>
       <a href="Gedichten.html" class="w3-bar-item w3-button">Gedichten</a>
       <a href="Science.html" class="w3-bar-item w3-button">Science</a>
       <div class="w3-dropdown-hover">
@@ -127,12 +135,12 @@ for (i = 0; i < dropdown.length; i++) {
      }
    }
    image = new ImageArray(3)
-   image[0] = 'Wolk123.jpg'
-   image[1] = 'Wolk127.jpg'
-   image[2] = 'Wolk129.jpg'
-   image[3] = 'Wolk141.jpg'
-   image[4] = 'Wolk152.jpg'
-   image[5] = 'Wolk157.jpg'
+   image[0] = 'Wolk123.JPG'
+   image[1] = 'Wolk127.JPG'
+   image[2] = 'Wolk129.JPG'
+   image[3] = 'Wolk141.JPG'
+   image[4] = 'Wolk152.JPG'
+   image[5] = 'Wolk157.JPG'
 
    var rand = 60/image.length
    function randomimage() {
